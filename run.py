@@ -55,12 +55,12 @@ def main():
 
     # compile
     setup_file = os.path.join(test_package_path, 'setup.py')
-    copyfile('setup.py.orig', setup_file)
+    copyfile('setup.tmpl.py', setup_file)
 
+    # compile & cleanup
     os.chdir(test_package_path)
     run_setup('setup.py', ['build_ext', '--inplace'])
 
-    # cleanup
     rmtree('build')
     os.remove('setup.py')
     os.remove('funcs.c')

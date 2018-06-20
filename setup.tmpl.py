@@ -7,6 +7,7 @@ from Cython.Distutils import build_ext
 
 extensions = [Extension("funcs", ["funcs.pyx"])]
 
+
 def get_ext_filename_without_platform_suffix(filename):
     name, ext = os.path.splitext(filename)
     ext_suffix = sysconfig.get_config_var('EXT_SUFFIX')
