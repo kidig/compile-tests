@@ -1,8 +1,16 @@
 # compile-tests
 Compile python tests by Cython
 
-## Compile
+## Requirements
+* Python 3.5+
+* astor
+* Cython
+
+## 0. Installation
+`pip install -r requirements.txt`
+
+## 1. Compile
 `python run.py`
 
-## Run
+## 2. Run
 `python dist/example.py`
