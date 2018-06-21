@@ -3,18 +3,17 @@ Compile python tests by Cython
 
 ## How it works
 
-- Pick up all 'test_' functions from source
-- Make a new 'tests' package and place that functions inside
-- Set import to the package in the source
+- Extract code block between 'HIDDEN BLOCK' tags from source
+- Make a new 'tests' package and place that code block inside
+- Set import from the package to the source
 - Compile the package by Cython
 - Cleanup
 
-After, you can run new source as regular python file.
+After that, you can run new source as regular python file.
 
 
 ## Requirements
 * Python 3.5+
-* astor
 * Cython
 
 ## 0. Installation
