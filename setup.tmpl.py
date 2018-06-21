@@ -5,7 +5,7 @@ from distutils.extension import Extension
 from Cython.Build import cythonize
 from Cython.Distutils import build_ext
 
-extensions = [Extension("funcs", ["funcs.pyx"])]
+extensions = [Extension("funcs", ["funcs.py"])]
 
 
 def get_ext_filename_without_platform_suffix(filename):
